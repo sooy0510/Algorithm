@@ -2,6 +2,7 @@ package com.java.algo;
 
  
 
+import java.io.FileInputStream;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -44,54 +45,38 @@ class Solution {
 		Scanner sc = new Scanner(System.in);
 
 		int T;
-		
-
-		/*
-
-		 * 여러 개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
-
-		 */
-
+		int[][] buildings = new int[10][1000];
  
 
-		for(int i=1; i<=10; i++) {
+		for(int i=0; i<10; i++) {
 			T = sc.nextInt();
-			//T = System.in.read();
-			//System.out.println(T);
-			int[] buildings = new int[T];
-			int n = 0;
-			int[] arr1 = new int[4];
 
 			for (int test_case = 0; test_case < T; test_case++) {
-
-				//buildings[test_case] = System.in.read();
-				buildings[test_case] = sc.nextInt();
-				
-				//for(int l=0; l<buildings.length; l++) { System.out.println(buildings[l]); }
+				buildings[i][test_case] = sc.nextInt();
 			}	
+		}
+		
+		
+		for(int i=0; i<10; i++) {
+			int n = 0;
+			int[] arr1 = new int[4];
+			for(int j=2; j< buildings[i].length-2; j++) {
 
-			for(int j=2; j< T-2; j++) {
+				if((buildings[i][j] > buildings[i][j-1]) && (buildings[i][j] > buildings[i][j-2]) && (buildings[i][j] > buildings[i][j+1]) && (buildings[i][j] > buildings[i][j+2])) {
 
-				if((buildings[j] > buildings[j-1]) && (buildings[j] > buildings[j-2]) && (buildings[j] > buildings[j+1]) && (buildings[j] > buildings[j+2])) {
-
-					arr1[0] = buildings[j-1];
-					arr1[1] = buildings[j-2];
-					arr1[2] = buildings[j+1];
-					arr1[3] = buildings[j+2];
+					arr1[0] = buildings[i][j-1];
+					arr1[1] = buildings[i][j-2];
+					arr1[2] = buildings[i][j+1];
+					arr1[3] = buildings[i][j+2];
 
 					Arrays.sort(arr1);
-					//System.out.println(Arrays.toString(arr1));
 					int h = arr1[3];
-					//System.out.println(h);
-					n += buildings[j] - h;
-					//System.out.println(n);
-
+					n += buildings[i][j] - h;
 				}
 
 			}
-			//}	
-			//System.out.println(Arrays.toString(arr1));
-			System.out.printf("# %d %d\n", i,n);
+			System.out.println();
+			System.out.printf("#%d %d", i+1,n);
 		}
 
 	}
