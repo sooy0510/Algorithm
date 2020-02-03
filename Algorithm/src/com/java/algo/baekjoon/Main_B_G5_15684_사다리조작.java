@@ -6,6 +6,15 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+/**
+ * 
+ * 백준_G5_15684_사다리조작
+ * 메모리 : 15488KB
+ * 시간 : 1956ms
+ * 코드길이 : 1571B
+ * 
+ */
+
 public class Main_B_G5_15684_사다리조작 {
 
 	static int N,M,H;
@@ -86,7 +95,8 @@ public class Main_B_G5_15684_사다리조작 {
 		H = Integer.parseInt(st.nextToken());
 		
 		//배열 만들기, 배열의 최대크기
-		ladder = new boolean[32][11];
+		//ladder = new boolean[32][11];
+		ladder = new boolean[H+2][N+2];
 			
 		//가로선 들어오는 곳마다 true
 		for(int i=0; i<M; i++) {
@@ -100,7 +110,7 @@ public class Main_B_G5_15684_사다리조작 {
 		search(0,1);
 		
 		//3넘거나 불가능하면 -1출력
-		if(min > 3 || min == 4) {
+		if(min == 4) {
 			System.out.println(-1);
 		}else {
 			System.out.println(min);
