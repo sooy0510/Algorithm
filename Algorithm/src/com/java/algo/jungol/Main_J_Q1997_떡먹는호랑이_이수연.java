@@ -2,27 +2,27 @@ package com.java.algo.jungol;
 
 import java.util.Scanner;
 
-public class Main_J_Q1997_¶±¸Ô´ÂÈ£¶ûÀÌ_ÀÌ¼ö¿¬ {
+public class Main_J_Q1997_ë–¡ë¨¹ëŠ”í˜¸ë‘ì´_ì´ìˆ˜ì—° {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int D = sc.nextInt();	//ÇÒ¸Ó´Ï°¡ ³Ñ¾î¿Â ³¯
-		int K = sc.nextInt();	//¶± °³¼ö
+		int D = sc.nextInt();	//í• ë¨¸ë‹ˆê°€ ë„˜ì–´ì˜¨ ë‚ 
+		int K = sc.nextInt();	//ë–¡ ê°œìˆ˜
 		
 		int[] arr = new int[D+1];
 		
-		// x,y µÑ´Ù 0ÀÌ¸é ¸ğµç ¹è¿­ °ªÀÌ 0ÀÌ¹Ç·Î Ã¹Â°³¯¸¸ ¶±°³¼ö 0°¡´É
+		// x,y ë‘˜ë‹¤ 0ì´ë©´ ëª¨ë“  ë°°ì—´ ê°’ì´ 0ì´ë¯€ë¡œ ì²«ì§¸ë‚ ë§Œ ë–¡ê°œìˆ˜ 0ê°€ëŠ¥
 		for(int x=0; x<100; x++) {
 			arr[1] = x; 
 			for(int y=1; y<100; y++) {
 				arr[2] = y;
 				
-				// DÂ°³¯ ¶±°³¼ö ±¸ÇØ¼­ arr[D]¿¡ ³Ö±â
+				// Dì§¸ë‚  ë–¡ê°œìˆ˜ êµ¬í•´ì„œ arr[D]ì— ë„£ê¸°
 				for(int i=3; i<D+1; i++) { 
 					arr[i] = arr[i-2]+arr[i-1];
 				}
 				
-				// Á¶°Ç : µÑÂ°³¯ ¶±°³¼ö°¡ Ã¹Â°³¯ ¶±°³¼öº¸´Ù Å©°í, ¶±°³¼ö´Â 10ÀÌ»óÀÌ°í K°³ÀÏ¶§ Ãâ·Â
+				// ì¡°ê±´ : ë‘˜ì§¸ë‚  ë–¡ê°œìˆ˜ê°€ ì²«ì§¸ë‚  ë–¡ê°œìˆ˜ë³´ë‹¤ í¬ê³ , ë–¡ê°œìˆ˜ëŠ” 10ì´ìƒì´ê³  Kê°œì¼ë•Œ ì¶œë ¥
 				if((x<y) &&(arr[D] >= 10) && (arr[D] == K)) {
 					System.out.println(x);
 					System.out.println(y);

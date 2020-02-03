@@ -4,10 +4,6 @@ import java.util.StringTokenizer;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
  
-/*
- * ssafy - Q2063 : 중간값 구하기
- * */
-
 
 class Q2063 {
     public static void main(String args[]) throws Exception {

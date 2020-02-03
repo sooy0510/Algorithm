@@ -1,8 +1,9 @@
+  
 package com.java.algo.jungol;
 
 import java.util.Scanner;
 
-public class Main_J_Q2259_Âü¿Ü¹ç_ÀÌ¼ö¿¬ {
+public class Main_J_Q2259_ì°¸ì™¸ë°­_ì´ìˆ˜ì—° {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -19,7 +20,7 @@ public class Main_J_Q2259_Âü¿Ü¹ç_ÀÌ¼ö¿¬ {
 			arr[i] = sc.nextInt();
 		}
 		
-		// ÀüÃ¼ »ç°¢ÇüÀÇ ³ôÀÌ, ³Êºñ
+		// ì „ì²´ ì‚¬ê°í˜•ì˜ ë†’ì´, ë„ˆë¹„
 		for(int i=0; i<6; i++) {
 			if(i%2==0) {
 				if(w < arr[i]) {
@@ -32,8 +33,8 @@ public class Main_J_Q2259_Âü¿Ü¹ç_ÀÌ¼ö¿¬ {
 			}
 		}
 		
-		// ÇÑº¯(array[i])À» ±âÁØÀ¸·Î array[i-1]+array[i+1]ÀÌ ÀüÃ¼ »ç°¢ÇüÀÇ 
-		// ³Êºñ ¶Ç´Â ³ôÀÌÀÏ °æ¿ì ºó »ç°¢Çü ÀÇ¹Ì
+		// í•œë³€(array[i])ì„ ê¸°ì¤€ìœ¼ë¡œ array[i-1]+array[i+1]ì´ ì „ì²´ ì‚¬ê°í˜•ì˜ 
+		// ë„ˆë¹„ ë˜ëŠ” ë†’ì´ì¼ ê²½ìš° ë¹ˆ ì‚¬ê°í˜• ì˜ë¯¸
 		for(int i=0; i<6; i++) {
 			if(i%2 == 0) {
 				if(h == arr[(i+5)%6] + arr[(i+1)%6]) {

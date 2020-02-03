@@ -2,7 +2,7 @@ package com.java.algo.jungol;
 
 import java.util.Scanner;
 
-public class Main_J_Q1880_¾ÏÈ£Ç®±â_ÀÌ¼ö¿¬ {
+public class Main_J_Q1880_ì•”í˜¸í’€ê¸°_ì´ìˆ˜ì—° {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -13,7 +13,7 @@ public class Main_J_Q1880_¾ÏÈ£Ç®±â_ÀÌ¼ö¿¬ {
 		int idx;
 		
 		for(int i=0; i<input.length(); i++) {
-			// ´ë¹®ÀÚ 65ºÎÅÍ, ¼Ò¹®ÀÚ 97ºÎÅÍ
+			// ëŒ€ë¬¸ì 65ë¶€í„°, ì†Œë¬¸ì 97ë¶€í„°
 			c = input.charAt(i);
 			if(c>=65 && c< 97) {
 				c += 32;

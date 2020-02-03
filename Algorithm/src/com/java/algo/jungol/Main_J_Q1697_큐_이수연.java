@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class Main_J_Q1697_Å¥_ÀÌ¼ö¿¬ {
+public class Main_J_Q1697_í_ì´ìˆ˜ì—° {
 
 	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);

@@ -2,7 +2,7 @@ package com.java.algo.hw;
 
 import java.util.Scanner;
 
-public class Main_J_1175_ÁÖ»çÀ§´øÁö±â2_ÀÌ¼ö¿¬ {
+public class Main_J_1175_ì£¼ì‚¬ìœ„ë˜ì§€ê¸°2_ì´ìˆ˜ì—° {
 
 	static int[] arr;
 	static int N;
@@ -19,7 +19,7 @@ public class Main_J_1175_ÁÖ»çÀ§´øÁö±â2_ÀÌ¼ö¿¬ {
 		permutation(0);
 	}
 
-	private static void permutation(int index) {	//³»°¡ Ã³¸®ÇÏ·Á°í ÇÏ´Â À§Ä¡
+	private static void permutation(int index) {	//ë‚´ê°€ ì²˜ë¦¬í•˜ë ¤ê³  í•˜ëŠ” ìœ„ì¹˜
 		
 		if(index == N) {
 			sum = 0;

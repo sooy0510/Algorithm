@@ -6,10 +6,10 @@ import java.io.OutputStreamWriter;
 import java.util.Scanner;
 
 /*
- * Output Limit Exceeded ¹ß»ı
+ * Output Limit Exceeded ë°œìƒ
  * */
 
-public class Main_J_Q1339_¹®ÀÚ»ï°¢Çü2_ÀÌ¼ö¿¬ {
+public class Main_J_Q1339_ë¬¸ìì‚¼ê°í˜•2_ì´ìˆ˜ì—° {
 
 	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);
@@ -25,7 +25,7 @@ public class Main_J_Q1339_¹®ÀÚ»ï°¢Çü2_ÀÌ¼ö¿¬ {
 		
 		char[][] arr = new char[n][];
 		
-		//µ¿ÀûÇÒ´ç
+		//ë™ì í• ë‹¹
 		for(int i=0; i<n; i++) {
 			arr[i] = new char[mid+1];
 		}
@@ -37,7 +37,7 @@ public class Main_J_Q1339_¹®ÀÚ»ï°¢Çü2_ÀÌ¼ö¿¬ {
 		}
 		
 		
-		// ¿ìÃø¿¡¼­ ÁÂÃøÀ¸·Î
+		// ìš°ì¸¡ì—ì„œ ì¢Œì¸¡ìœ¼ë¡œ
 		for(int j=mid; j>=0; j--) {
 			for(int i=j; i<n-j; i++) {
 				arr[i][j] = c;
@@ -76,4 +76,3 @@ public class Main_J_Q1339_¹®ÀÚ»ï°¢Çü2_ÀÌ¼ö¿¬ {
 	}
 	
 }
-

@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 /*
- * ssafy - Q1204: ÃÖºó¼ö ±¸ÇÏ±â
+ * ssafy - Q1204: ìµœë¹ˆìˆ˜ êµ¬í•˜ê¸°
  * */
 
 
@@ -25,7 +25,7 @@ class Q1204 {
 		
 		
 		for (int test_case = 1; test_case <= T; test_case++) {
-			Arrays.fill(arr,0);  // ¹è¿­ ÃÊ±âÈ­
+			Arrays.fill(arr,0);  // ë°°ì—´ ì´ˆê¸°í™”
 			t = Integer.parseInt(br.readLine());
 			st = new StringTokenizer(br.readLine(), " ");
 			
@@ -34,7 +34,7 @@ class Q1204 {
 				arr[num]++;
 			}
 			
-			max = getMax(arr);  //ÃÖ´ëºóµµ¼ö
+			max = getMax(arr);  //ìµœëŒ€ë¹ˆë„ìˆ˜
 			
 			for(int i=arr.length-1; i>=0; i--) {
 				if(arr[i] == max) {

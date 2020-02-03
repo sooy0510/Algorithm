@@ -6,13 +6,13 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-class Solution_D4_Q1210_Ladder1_ÀÌ¼ö¿¬ {
+class Solution_D4_Q1210_Ladder1_ì´ìˆ˜ì—° {
 	static int x = 98;
 	static int y = 0;
 	static int up = 0;
 	static int left = 0;
 	static int right = 0;
-	static int[][] arr = new int[100][100]; // ÀÔ·Â¹è¿­
+	static int[][] arr = new int[100][100]; // ì…ë ¥ë°°ì—´
 
 	public static void main(String args[]) throws Exception {
 
@@ -20,7 +20,7 @@ class Solution_D4_Q1210_Ladder1_ÀÌ¼ö¿¬ {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
 		final int T = 10;
-		int idx = 0; // Ãâ·Â½Ã Å×ÀÌ½ºÄÉÀÌ½º ¹øÈ£
+		int idx = 0; // ì¶œë ¥ì‹œ í…Œì´ìŠ¤ì¼€ì´ìŠ¤ ë²ˆí˜¸
 		StringTokenizer st;
 		char p = 'u';
 
@@ -41,7 +41,7 @@ class Solution_D4_Q1210_Ladder1_ÀÌ¼ö¿¬ {
 			}
 
 
-			// Å½»ö
+			// íƒìƒ‰
 			x = 98;
 			y = end;
 
@@ -49,7 +49,7 @@ class Solution_D4_Q1210_Ladder1_ÀÌ¼ö¿¬ {
 
 				getVal();
 				if (p == 'u') {
-					if (left == 0 && right == 0) { // left, right µÑ´Ù 0ÀÌ¸é À§·Î¸¸ °¡±â
+					if (left == 0 && right == 0) { // left, right ë‘˜ë‹¤ 0ì´ë©´ ìœ„ë¡œë§Œ ê°€ê¸°
 						x--;
 						p = 'u';
 					} else if (left == 1 && right == 0) { // left
@@ -89,8 +89,8 @@ class Solution_D4_Q1210_Ladder1_ÀÌ¼ö¿¬ {
 	}
 
 	private static void getVal() {
-		// ¸Ç³¡(y=0ÀÌ°Å³ª 99¸é ¾î¶±ÇÏÁö..?
-		if (y == 0) { // À§, ¿À¸¥ÂÊ¹Û¿¡ Å½»ö ¸øÇÔ
+		// ë§¨ë(y=0ì´ê±°ë‚˜ 99ë©´ ì–´ë–¡í•˜ì§€..?
+		if (y == 0) { // ìœ„, ì˜¤ë¥¸ìª½ë°–ì— íƒìƒ‰ ëª»í•¨
 			up = arr[x - 1][y];
 			left = 0;
 			right = arr[x][y + 1];

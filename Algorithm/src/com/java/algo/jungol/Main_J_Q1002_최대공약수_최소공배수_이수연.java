@@ -3,10 +3,10 @@ package com.java.algo.jungol;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main_J_Q1002_ÃÖ´ë°ø¾à¼ö_ÃÖ¼Ò°ø¹è¼ö_ÀÌ¼ö¿¬ {
+public class Main_J_Q1002_ìµœëŒ€ê³µì•½ìˆ˜_ìµœì†Œê³µë°°ìˆ˜_ì´ìˆ˜ì—° {
 
-	static int gcf = 1; //ÃÖ´ë°ø¾à¼ö
-	static int lcm = 1; //ÃÖ¼Ò°ø¹è¼ö
+	static int gcf = 1; //ìµœëŒ€ê³µì•½ìˆ˜
+	static int lcm = 1; //ìµœì†Œê³µë°°ìˆ˜
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

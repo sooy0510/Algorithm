@@ -2,7 +2,7 @@ package com.java.algo.jungol;
 
 import java.util.Scanner;
 
-public class Main_J_12514_¹®ÀÚ¿­Ã£±â_ÀÌ¼ö¿¬ {
+public class Main_J_12514_ë¬¸ìì—´ì°¾ê¸°_ì´ìˆ˜ì—° {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

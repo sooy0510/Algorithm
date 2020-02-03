@@ -9,9 +9,9 @@ public class Solution32 {
 
 	static int[] px = {1,0,-1,0};
 	static int[] py = {0,1,0,-1};
-	// µ¿:1, ³²:2, ¼­:3, ºÏ:4
+	// ë™:1, ë‚¨:2, ì„œ:3, ë¶:4
 	
-	private static int game(int y, int x, int jump) {	//Çà¿­
+	private static int game(int y, int x, int jump) {	//í–‰ì—´
 
 		int money = 0;
 		int point_y = y;
@@ -20,19 +20,19 @@ public class Solution32 {
 		
 		for(int k=0; k<jump; k++) {
 			point = arr[point_y][point_x];
-			int p = Character.getNumericValue(point.charAt(0));	//¹æÇâ
-			int j = Character.getNumericValue(point.charAt(1));	//Á¡ÇÁÄ­¼ö
+			int p = Character.getNumericValue(point.charAt(0));	//ë°©í–¥
+			int j = Character.getNumericValue(point.charAt(1));	//ì í”„ì¹¸ìˆ˜
 
 			point_y = point_y + py[p-1]*j;
 			point_x = point_x + px[p-1]*j;
 
-			// ÇÔÁ¤¿¡ ºüÁö°Å³ª °æ°è ¹ş¾î³ª¸é »ó±İ¸ø¹ŞÀ½
+			// í•¨ì •ì— ë¹ ì§€ê±°ë‚˜ ê²½ê³„ ë²—ì–´ë‚˜ë©´ ìƒê¸ˆëª»ë°›ìŒ
 			if(arr[point_y][point_x] == null || arr[point_y][point_x].equals("0") || point_y > arr.length || point_y < 1 || point_x > arr.length || point_x < 1){
 				return 0;
 			}
 		}
 		
-		// ¸¶Áö¸· ÁÂÇ¥¿¡ Àû¾îÁø ¼ıÀÚ¿¡ 100À» °öÇÑ ±İ¾×ÀÌ »ó±İ
+		// ë§ˆì§€ë§‰ ì¢Œí‘œì— ì ì–´ì§„ ìˆ«ìì— 100ì„ ê³±í•œ ê¸ˆì•¡ì´ ìƒê¸ˆ
 		money = Integer.parseInt(arr[point_y][point_x])*100;
 		return money;
 
@@ -52,7 +52,7 @@ public class Solution32 {
 			N = sc.nextInt();
 			arr = new String[Y][X];
 
-			// ¼ıÀÚÆÇ Á¤º¸
+			// ìˆ«ìíŒ ì •ë³´
 			for (int i = 1; i < Y; i++) {
 				for (int j = 1; j < X; j++) {
 					arr[i][j] = sc.next();
@@ -62,13 +62,13 @@ public class Solution32 {
 
 			int[] parts = new int[N * 3];
 
-			// Âü°¡ÀÚÀÇ ½ÃÀÛÀ§Ä¡(Çà, ¿­), È½¼ö
+			// ì°¸ê°€ìì˜ ì‹œì‘ìœ„ì¹˜(í–‰, ì—´), íšŸìˆ˜
 			for (int i = 0; i < N * 3; i++) {
 				parts[i] = sc.nextInt();
 			}
 			
 
-			// ÇÔÁ¤ ¼ö, ÇÔÁ¤ÀÇ ÁÂÇ¥µé
+			// í•¨ì • ìˆ˜, í•¨ì •ì˜ ì¢Œí‘œë“¤
 			int bomb = sc.nextInt();
 			for (int i = 0; i < bomb; i++) {
 				int y = sc.nextInt();
@@ -76,9 +76,9 @@ public class Solution32 {
 				arr[y][x] = "0";
 			}
 
-			// °ÔÀÓ ½ÃÀÛ
+			// ê²Œì„ ì‹œì‘
 			for (int i = 0; i < N*3; i=i+3) {
-				// ½ÃÀÛ Çà, ½ÃÀÛ ¿­, Á¡ÇÁ ¼ö
+				// ì‹œì‘ í–‰, ì‹œì‘ ì—´, ì í”„ ìˆ˜
 				result += game(parts[i], parts[i + 1], parts[i + 2]);
 			}
 			

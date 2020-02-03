@@ -3,13 +3,13 @@ package com.java.algo.jungol;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Main_J_Q2858_¼è¸·´ë±â_ÀÌ¼ö¿¬ {
+public class Main_J_Q2858_ì‡ ë§‰ëŒ€ê¸°_ì´ìˆ˜ì—° {
 
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int l = 0; //±æÀÌ
-		int c = 0; //°³¼ö
-		boolean flag = false; // "("´Â false, ")"´Â true
+		int l = 0; //ê¸¸ì´
+		int c = 0; //ê°œìˆ˜
+		boolean flag = false; // "("ëŠ” false, ")"ëŠ” true
 		String arr = br.readLine();
 		
 		for(int i=0; i<arr.length(); i++) {

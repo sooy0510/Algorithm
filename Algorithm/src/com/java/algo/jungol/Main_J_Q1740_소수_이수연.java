@@ -3,7 +3,7 @@ package com.java.algo.jungol;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main_J_Q1740_¼Ò¼ö_ÀÌ¼ö¿¬ {
+public class Main_J_Q1740_ì†Œìˆ˜_ì´ìˆ˜ì—° {
 
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
@@ -13,29 +13,29 @@ public class Main_J_Q1740_¼Ò¼ö_ÀÌ¼ö¿¬ {
 		int idx = 0;
 		int sum = 0;
 		
-		// 2ºÎÅÍ ¹è¼ö Á¦°Å
+		// 2ë¶€í„° ë°°ìˆ˜ ì œê±°
 		for(int i=M; i<=N; i++) {
 			if(i == 1) i=2;
 			
-			boolean isPrime = true; //ÃÊ±â°ª
+			boolean isPrime = true; //ì´ˆê¸°ê°’
 			//for(int j=2; j*j<=i; j++) {
 			for(int j=2; j<=Math.sqrt(i); j++) {
 				if(i % j == 0) {
-					//¼Ò¼ö°¡ ¾Æ´Ô
+					//ì†Œìˆ˜ê°€ ì•„ë‹˜
 					isPrime = false;
 					break;
 				}
 			}
 			
 			if(isPrime) {
-				//¼Ò¼ö
+				//ì†Œìˆ˜
 				sum += i;
 				arr[idx] = i;
 				idx++;
 			}
 		}
 		
-		//¼Ò¼ö 0°³ÀÏ¶§´Â -1 Ãâ·Â
+		//ì†Œìˆ˜ 0ê°œì¼ë•ŒëŠ” -1 ì¶œë ¥
 		if(sum == 0) {
 			System.out.println(-1);
 		}else {

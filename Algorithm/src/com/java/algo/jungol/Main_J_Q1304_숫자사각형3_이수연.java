@@ -2,7 +2,7 @@ package com.java.algo.jungol;
 
 import java.util.Scanner;
 
-public class Main_J_Q1304_¼ıÀÚ»ç°¢Çü3_ÀÌ¼ö¿¬ {
+public class Main_J_Q1304_ìˆ«ìì‚¬ê°í˜•3_ì´ìˆ˜ì—°{
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -16,7 +16,6 @@ public class Main_J_Q1304_¼ıÀÚ»ç°¢Çü3_ÀÌ¼ö¿¬ {
 			}
 		}
 		
-		// Ãâ·Â
 		for(int i=0; i<n; i++) {
 			for(int j=0; j<n; j++) {
 				System.out.print(arr[i][j]+" ");
