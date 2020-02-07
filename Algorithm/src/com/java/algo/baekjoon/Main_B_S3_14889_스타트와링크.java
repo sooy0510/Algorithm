@@ -51,26 +51,22 @@ public class Main_B_S3_14889_스타트와링크 {
 			System.out.print("team1 : ");
 			System.out.println(Arrays.toString(team1));
 			
-			System.out.print("team2 : ");
-			System.out.println(Arrays.toString(team2));
+//			System.out.print("team2 : ");
+//			System.out.println(Arrays.toString(team2));
 			return;
 		}
 
 		
 		
 		for(int i=1; i<=N; i++) {
-			if(selected_1[i] == true)
+			if(selected_1[i] == true) {
 				continue;
-			if(selected_2[i] == true)
-				continue;
+			}
 			//team1에들어가면 team2에는 없음
 			team1[index] = i;
 			selected_1[i] = true;
-			selected_2[i] = false;
 			makeTeam(index+1, cnt+1);
-			team2[index] = i;
 			selected_1[i] = false;
-			selected_2[i] = true;
 		}
 	}
 
