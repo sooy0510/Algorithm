@@ -3,12 +3,8 @@
 ## 파일 명명 규칙
 
 - [Class이름]/사이트/난이도/문제번호/문제이름
-  - Class이름 : 해당 사이트에서 사용되는 Class명
-    - Solution : SWExpert
-    - Main : 백준, 정보올림피아드
-  - 사이트
-    - B : 백준
-    - J : 정보올림피아드
+  - Class이름 {Solution : SWExpert, Main : 백준, 정보올림피아드}
+  - 사이트 {B : 백준, J : 정보올림피아드}
 
 > 백준의 난이도 확인 크롬확장프로그램 : solved.ac
 
