@@ -1,8 +1,8 @@
-package com.java.algo.hw;
+package com.java.algo.jungol;
 
 import java.util.Scanner;
 
-public class Main_J_1175_주사위던지기2_이수연 {
+public class Main_J_1175_주사위던지기2 {
 
 	static int[] arr;
 	static int N;

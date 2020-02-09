@@ -2,7 +2,7 @@ package com.java.algo.jungol;
 
 import java.util.Scanner;
 
-public class Main_J_12514_문자열찾기_이수연 {
+public class Main_J_12514_문자열찾기 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

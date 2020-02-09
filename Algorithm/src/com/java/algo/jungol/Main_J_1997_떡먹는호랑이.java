@@ -2,7 +2,7 @@ package com.java.algo.jungol;
 
 import java.util.Scanner;
 
-public class Main_J_Q1997_떡먹는호랑이_이수연 {
+public class Main_J_1997_떡먹는호랑이 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

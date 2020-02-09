@@ -3,7 +3,7 @@ package com.java.algo.jungol;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Main_J_Q2858_쇠막대기_이수연 {
+public class Main_J_2858_쇠막대기 {
 
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

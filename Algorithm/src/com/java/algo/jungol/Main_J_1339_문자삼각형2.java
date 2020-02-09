@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Output Limit Exceeded 발생
  * */
 
-public class Main_J_Q1339_문자삼각형2_이수연 {
+public class Main_J_1339_문자삼각형2 {
 
 	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);

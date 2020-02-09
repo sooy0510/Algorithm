@@ -3,7 +3,7 @@ package com.java.algo.jungol;
 
 import java.util.Scanner;
 
-public class Main_J_Q2259_참외밭_이수연 {
+public class Main_J_2259_참외밭 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

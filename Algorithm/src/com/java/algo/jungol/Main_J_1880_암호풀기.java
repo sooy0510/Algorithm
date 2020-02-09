@@ -2,7 +2,7 @@ package com.java.algo.jungol;
 
 import java.util.Scanner;
 
-public class Main_J_Q1880_암호풀기_이수연 {
+public class Main_J_1880_암호풀기 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

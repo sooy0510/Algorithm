@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
  * */
 
 
-class Q1204 {
+class Solution_D2_1204_최빈수구하기 {
 	public static void main(String args[]) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

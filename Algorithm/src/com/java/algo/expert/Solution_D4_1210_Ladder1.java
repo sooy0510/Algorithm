@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-class Solution_D4_Q1210_Ladder1_이수연 {
+class Solution_D4_1210_Ladder1 {
 	static int x = 98;
 	static int y = 0;
 	static int up = 0;

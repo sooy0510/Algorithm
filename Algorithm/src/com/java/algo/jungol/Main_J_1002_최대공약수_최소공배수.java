@@ -3,7 +3,7 @@ package com.java.algo.jungol;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main_J_Q1002_최대공약수_최소공배수_이수연 {
+public class Main_J_1002_최대공약수_최소공배수 {
 
 	static int gcf = 1; //최대공약수
 	static int lcm = 1; //최소공배수
