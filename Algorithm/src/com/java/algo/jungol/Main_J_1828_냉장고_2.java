@@ -1,15 +1,21 @@
 package com.java.algo.jungol;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.Comparator;
 import java.util.StringTokenizer;
 
+
+/**
+ * 
+ * 1828_냉장고(2차)
+ * 메모리 : 8,580KB
+ * 실행시간 : 136ms
+ * 풀이 
+ * 1. Compartor로 배열 정렬
+ * 
+ */
 
 public class Main_J_1828_냉장고_2 {
 
@@ -19,67 +25,71 @@ public class Main_J_1828_냉장고_2 {
 		
 		int N = Integer.parseInt(br.readLine());
 		int[][] arr = new int[N][2];
-		ArrayList<Point> result = new ArrayList<Point>();
-		
-		boolean isSame = false;
+		int[] dp = new int[N];	//몇번째 냉장고인지 담는 배열
 		
 		for(int i=0; i<N; i++) {
 			st = new StringTokenizer(br.readLine());
-			int min = Integer.parseInt(st.nextToken());
-			int max = Integer.parseInt(st.nextToken());
-			arr[i][0] = min;
-			arr[i][1] = max;
+			arr[i][0] = Integer.parseInt(st.nextToken());
+			arr[i][1] = Integer.parseInt(st.nextToken());
 		}
 		
-		// sorting
-		for(int i=0; i<N-1; i++) {
-			for(int j=i+1; j<N; j++) {
-				if(arr[j][0] < arr[i][0]) {
-					int[] temp = arr[j];
-					arr[j] = arr[i];
-					arr[i] = temp;					
-				}
+		// sorting(comparator 이용 - 객체 정렬) - 오름차순
+		// Comparator의 인자는 int[]
+		
+		// 1. 익명 Comparator 클래스
+		Arrays.sort(arr, new Comparator<int[]>() {
+
+			@Override
+			public int compare(int[] o1, int[] o2) {
+				return o1[0] - o2[0];
 			}
 			
+		});
+		
+		// 2. 람다형
+		//Arrays.sort(arr, (a,b) -> a[0] - b[0]);
+		
+		
+		int Low = arr[0][0];
+		int High = arr[0][1];
+		dp[0] = 1;
+		
+		// 화학물질을 모두 돌면서 기존냉장고를 사용할지, 냉장고를 추가할지 생각한다
+		for(int i=1; i<N; i++) {
+			
+			//포함될 떄
+			if(arr[i][0] >= Low && arr[i][1] <= High) {
+				Low = arr[i][0];
+				High = arr[i][1];
+				dp[i] = dp[i-1];
+			}
+			
+			//최저기온이 범위에 들어갈때
+			else if(arr[i][0] >= Low && arr[i][0] <= High) {
+				//Low변경
+				Low = arr[i][0];
+				//냉장고는 그대로
+				dp[i] = dp[i-1];
+			}
+			
+			//최고기온이 범위에 들어갈떄
+			else if(arr[i][1] >= Low && arr[i][1] <= High) {
+				//High변경
+				High = arr[i][1];
+				//냉장고 그대로
+				dp[i] = dp[i-1];
+			}
+			
+			//범위 밖(냉장고 추가)
+			else {
+				Low = arr[i][0];
+				High = arr[i][1];
+				//냉장고 추가
+				dp[i] = dp[i-1]+1;
+			}
 		}
 		
-		for(int i=0; i<N; i++) {
-			if(i==0) {
-				//처음에 일단 냉장고 한대 등록
-				result.add(new Point(arr[0][0], arr[0][1]));
-			}
-			
-			int a1= arr[i][0];
-			int b1= arr[i][1];
-			
-			for(int j=0; j<result.size(); j++) {
-				int a2 = result.get(j).x;
-				int b2 = result.get(j).y;
-				
-				if(a1 >= a2 && a1 <= b2) {
-					//같은 냉장고 사용가능
-					isSame = true;
-					
-					int[] ss = {a1, a2, b1, b2};
-					Arrays.sort(ss);
-					
-					result.get(j).x = ss[1];
-					result.get(j).y = ss[2];
-					
-					break;
-				}
-			}
-			
-			if(isSame) {
-				isSame=false;
-				continue;
-			}else {
-				isSame=false;
-				result.add(new Point(a1,b1));
-			}
-		}
-		
-		System.out.println(result.size());
+		System.out.println(dp[N-1]);
 		
 	}
 
