@@ -53,7 +53,7 @@ public class Solution_D3_1493_수의새로운연산 {
 			int[][] vertex = new int[2][2];
 			//p값의 좌표, q값의 좌표 구하기
 			int out = 0;
-			for(int i=1; i<400; i++) {
+			L:for(int i=1; i<400; i++) {
 				for(int j=1; j<400; j++) {
 					if(map[i][j] == p) {
 						vertex[0][0] = i;
@@ -66,7 +66,7 @@ public class Solution_D3_1493_수의새로운연산 {
 						out++;
 					}
 					if(out == 2) {
-						break;
+						break L;
 					}
 				}
 			}
