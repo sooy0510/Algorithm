@@ -33,7 +33,6 @@ public class Main_B_G5_13549_숨바꼭질3 {
 		}
 		
 		int size, current, next = 0;
-
 		// BFS
 		while (!q.isEmpty()) {
 			time++; // depth를 시간으로 생각

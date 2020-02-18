@@ -93,7 +93,6 @@ public class Main_B_G5_12851_숨바꼭질2 {
 					q.offer(next);
 				}
 			}
-			
 
 		}
 		
