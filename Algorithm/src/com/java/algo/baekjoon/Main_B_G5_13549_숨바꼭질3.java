@@ -6,15 +6,13 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main_B_G5_12851_숨바꼭질2 {
+
+public class Main_B_G5_13549_숨바꼭질3 {
 
 	static int N;
 	static int K;
 	static boolean visited[];
 	static int time = 0;
-	static int fast_time = 100000;
-	static boolean isFirst = false;
-	static int result = 0;
 
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -24,24 +22,15 @@ public class Main_B_G5_12851_숨바꼭질2 {
 
 		visited = new boolean[100001];
 
-		//n이 k보다 클때는 방법(result)는 1가지, fast_time도 한가지 밖에 안나온다
-		if(N > K) {
-			System.out.println(N-K);
-			System.out.println(1);
-			return;
-		}
-		
-		//만약 수빈이 위치와 동생위치가 같으면 0
-		if(N == K) {
-			System.out.println(0);
-			System.out.println(1);
-			return;
-		}
-		
-		
 		Queue<Integer> q = new LinkedList<Integer>();
 
 		q.offer(N);
+
+		//만약 수빈이 위치와 동생위치가 같으면 0
+		if(N == K) {
+			System.out.println(0);
+			return;
+		}
 		
 		int size, current, next = 0;
 
@@ -52,14 +41,11 @@ public class Main_B_G5_12851_숨바꼭질2 {
 			size = q.size();
 			while (size --> 0) {
 				current = q.poll();
-				
-				//방문처리를 먼저 해줌
 				visited[current] = true;
-				
 				
 				for (int i = 0; i < 3; i++) {
 					switch (i) {
-					case 0:
+					case 0:	//*2 거치면 time--해줘야함
 						next = current * 2;
 						break;
 
@@ -72,33 +58,23 @@ public class Main_B_G5_12851_숨바꼭질2 {
 						break;
 					}
 					
-					if (next < 0 || next >= 100001) {
+					if (next < 0 || next >= visited.length) {
 						continue;
 					}
-
-					if (next == K) { 	//처음 들어왔을 떄는 fast_time에 넣어주고 //처음 들어올때는 fast_time이 무조건 time보다 크다
-						//top-down이니까 time은 점점늘어나고, 들어올수있는건 같은 레벨에 잇는 time밖에 없다
-						if(fast_time >= time) {	
-							fast_time = time;
-							result++;
-						}
-						
-					}
-					
 					// 이미 방문했으면 pass
 					if (visited[next])
 						continue;
+					
+					if (next == K) {
+						System.out.println(time);
+						return;
+					}
 
-					//visited처리돼서 재방문안하게됨
 					q.offer(next);
 				}
 			}
-			
 
 		}
-		
-		System.out.println(fast_time);
-		System.out.println(result);
 
 	}
 }
