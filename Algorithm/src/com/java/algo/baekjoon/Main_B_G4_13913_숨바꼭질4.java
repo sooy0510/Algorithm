@@ -21,7 +21,7 @@ import java.util.StringTokenizer;
  *
  */
 
-public class Main_B_G5_13913_숨바꼭질4 {
+public class Main_B_G4_13913_숨바꼭질4 {
 
 	static int N;
 	static int K;
