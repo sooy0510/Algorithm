@@ -10,7 +10,25 @@
 
 <br>
 
+## 2020-02-19
 
+### G5
+
+- Main_B_G5_13549_숨바꼭질3
+
+> https://www.acmicpc.net/problem/13549
+
+<br>
+
+## 2020-02-18
+
+### G5
+
+- Main_B_G5_12851_숨바꼭질2
+
+> https://www.acmicpc.net/problem/12851
+
+<br>
 
 ## 2020-02-17
 
@@ -18,7 +36,7 @@
 
 - Main_B_S1_1697_숨바꼭질
 
-  > <https://www.acmicpc.net/problem/1697>
+> <https://www.acmicpc.net/problem/1697>
 
 <br>
 
