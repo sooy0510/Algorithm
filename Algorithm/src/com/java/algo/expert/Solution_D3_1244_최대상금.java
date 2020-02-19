@@ -45,23 +45,11 @@ public class Solution_D3_1244_최대상금 {
 
 	private static void permutation(int index, int cnt) {
 		
-		if(index == len) {
-			//System.out.println(Arrays.toString(numbers));
-			if(S - cnt > 0) {
-			}else {
-				int sum = 0;
-				int mul = 1;
-				for(int i=len-1; i>=0; i--) {
-					sum += numbers[i] * mul;
-					mul *= 10;
-				}
-				MAX = Math.max(sum, MAX);
-				return;
-			}
-			
-			
-//			if(cnt == S) {
-//				//System.out.println(Arrays.toString(numbers));
+//		if(index == len) {
+//			//System.out.println(Arrays.toString(numbers));
+//			if(S - cnt > 0) {
+//				//순열이 완성되었는데 교환횟수가 남았다면
+//			}else {
 //				int sum = 0;
 //				int mul = 1;
 //				for(int i=len-1; i>=0; i--) {
@@ -72,15 +60,51 @@ public class Solution_D3_1244_최대상금 {
 //				return;
 //			}
 			
+			
+		if(index == len) {
+			//System.out.println(Arrays.toString(numbers));
+			//System.out.println(Arrays.toString(numbers)+" / "+cnt);
+//			if(S-cnt>0) {
+//				len = S-cnt;
+//				permutation(0, 0);
+//			}else {
+//				check(cnt);
+//				return;
+//			}
+			check(cnt);
+			return;
 		}
+			
 		
 		
 		//자기포함 뒤에있는것들만 교환대상임
 		for(int i=index; i<len; i++) {
 			//index 위치와 i를 swap
 			swap(index, i);
+			if(cnt == S) {
+				check(cnt);
+				continue;
+			}
 			permutation(index+1, cnt+1);
+			//System.out.println(Arrays.toString(numbers)+" / "+cnt);
+//			if(cnt == S) {
+//				check(cnt);
+//				continue;
+//			}
 			swap(index, i);	//원상태로
+		}
+	}
+
+	private static void check(int count) {
+		if(count == S) {
+			//System.out.println(Arrays.toString(numbers)+" / "+count);
+			int sum = 0;
+			int mul = 1;
+			for(int i=len-1; i>=0; i--) {
+				sum += numbers[i] * mul;
+				mul *= 10;
+			}
+			MAX = Math.max(sum, MAX);
 		}
 	}
 
