@@ -6,6 +6,18 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
+/**
+ * 
+ * 12851_숨바꼭질2
+ * 메모리 : 76040KB
+ * 시간 : 252ms
+ * 코드길이 : 2251B
+ * 풀이 
+ * 1. 처음 들어왔을때는 fast_time에 넣어준다
+ * 2. top-down이니까 depth인 time은 점점늘어나고, 들어올수있는건 같은 레벨에 있는 time밖에 없다는점을 이용
+ *
+ */
+
 public class Main_B_G5_12851_숨바꼭질2 {
 
 	static int N;
