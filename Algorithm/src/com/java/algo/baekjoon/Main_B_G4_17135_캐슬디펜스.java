@@ -28,8 +28,6 @@ public class Main_B_G4_17135_캐슬디펜스 {
 		D = Integer.parseInt(st.nextToken());
 		
 		map = new int[N+1][M];	//N행 바로 아래의 모든 칸에 성이 있음
-		gungsu = new int[3];
-		stack = new Stack<>();
 		
 		for(int i=0; i<N; i++) {
 			st = new StringTokenizer(br.readLine());
@@ -38,7 +36,28 @@ public class Main_B_G4_17135_캐슬디펜스 {
 			}
 		}
 		
+//		for(int i=0; i<N+1; i++) {
+//			for(int j=0; j<N; j++) {
+//				System.out.print(map[i][j]+" ");
+//			}
+//			System.out.println();
+//		}
 		
+		//처음 궁수 위치 셋팅(np사용, 가장 작은 순열 만듦)
+		map[N][M-3] = map[N][M-2] = map[N][M-1] = 1; 	
+		
+		//궁수 위치 np
+		do {
+			
+		}while(!np());
+		
+	}
+
+	private static boolean np() {
+		
+		//i-1구하기
+		
+		return false;
 	}
 
 }
