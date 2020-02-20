@@ -71,6 +71,8 @@ public class Solution_D3_1244_최대상금 {
 //				check(cnt);
 //				return;
 //			}
+			
+			
 			check(cnt);
 			return;
 		}
@@ -91,13 +93,13 @@ public class Solution_D3_1244_최대상금 {
 //				check(cnt);
 //				continue;
 //			}
-			swap(index, i);	//원상태로
+			swap(index, i);	//원상태
 		}
 	}
 
 	private static void check(int count) {
-		if(count == S) {
-			//System.out.println(Arrays.toString(numbers)+" / "+count);
+		//if(count == -S) {
+			System.out.println(Arrays.toString(numbers)+" / "+count);
 			int sum = 0;
 			int mul = 1;
 			for(int i=len-1; i>=0; i--) {
@@ -105,7 +107,7 @@ public class Solution_D3_1244_최대상금 {
 				mul *= 10;
 			}
 			MAX = Math.max(sum, MAX);
-		}
+		//}
 	}
 
 	private static void swap(int a, int b) {
