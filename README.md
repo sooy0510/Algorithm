@@ -10,6 +10,24 @@
 
 <br>
 
+## 2020-02-20
+
+### S3
+
+- Main_B_S3_2630_색종이만들기
+
+> https://www.acmicpc.net/problem/2630
+
+<br>
+
+### S2
+
+- Main_B_S2_1931_회의실배정
+
+> https://www.acmicpc.net/problem/1931
+
+<br>
+
 ## 2020-02-19
 
 ### G5
