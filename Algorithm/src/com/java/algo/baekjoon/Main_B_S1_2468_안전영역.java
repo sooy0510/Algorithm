@@ -4,15 +4,21 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 import java.util.StringTokenizer;
 
 /**
- * 2468_안전영역
+ * 2468_안전영역(BFS)
  * 메모리 : 53320KB
  * 시간 : 256ms
  * 길이 : 2212B
  * 풀이
  * 1. 비의 양이 바뀔때마다 visited초기화 빼먹지 말기!
+ * 
+ * 
+ * DFS
+ * 메모리 : 37368KB
+ * 시간 : 284ms
  */
 
 /**
@@ -69,7 +75,8 @@ public class Main_B_S1_2468_안전영역 {
 				for(int j=0; j<N; j++) {
 					//아직 방문안했고 안전영역이면 탐색시작
 					if(!visited[i][j] && map[i][j]>r) {
-						bfs(i,j,r);
+						//bfs(i,j,r);
+						dfs(i,j,r);
 						MAX = Math.max(MAX, result);
 					}
 					
@@ -81,6 +88,34 @@ public class Main_B_S1_2468_안전영역 {
 
 	static int[] di = {-1,1,0,0};
 	static int[] dj = {0,0,-1,1};
+
+	private static void dfs(int i, int j, int r) {
+		Stack<Area> areas = new Stack<Area>();
+		visited[i][j] = true;
+		areas.push(new Area(i,j));
+		
+		while(!areas.isEmpty()) {
+			Area area = areas.pop();
+			
+			for(int d=0; d<4; d++) {
+				int next_i = area.i + di[d];
+				int next_j = area.j + dj[d];
+				
+				if(next_i < 0 || next_i >= N || next_j < 0 || next_j >= N) {
+					continue;
+				}
+				
+				//방문전 확인
+				if(!visited[next_i][next_j] && map[next_i][next_j] > r) {
+					visited[next_i][next_j] = true;
+					areas.push(new Area(next_i,next_j));
+				}
+			}
+			
+		}
+		result++;
+	}
+
 	
 	private static void bfs(int i, int j, int r) {
 		//visited처리해주고, 안전영역이니까 queue에 담는다
