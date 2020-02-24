@@ -24,6 +24,12 @@
 
   > <https://www.acmicpc.net/problem/10974>
 
+### S1
+
+- Main_B_S1_2178_미로탐색
+
+  > <https://www.acmicpc.net/problem/2178>
+
 <br>
 
 ## 2020-02-21
