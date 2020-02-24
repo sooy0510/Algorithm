@@ -10,6 +10,22 @@
 
 <br>
 
+## 2020-02-24
+
+### G5
+
+- Main_B_G5_1759_암호만들기
+
+  > <https://www.acmicpc.net/problem/1759>
+
+### S3
+
+- Main_B_S3_10974_모든순열
+
+  > <https://www.acmicpc.net/problem/10974>
+
+<br>
+
 ## 2020-02-21
 
 ### S1
