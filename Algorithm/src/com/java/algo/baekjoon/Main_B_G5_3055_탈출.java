@@ -19,7 +19,7 @@ import java.util.StringTokenizer;
  *
  */
 
-public class Main_B_G5_탈출 {
+public class Main_B_G5_3055_탈출 {
 
 	static int R,C;
 	static char[][] map;
