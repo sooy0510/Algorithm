@@ -18,6 +18,12 @@
 
   > <https://www.acmicpc.net/problem/3190>
 
+### G5
+
+- Main_B_G5_14499_주사위굴리기
+
+  > <https://www.acmicpc.net/problem/14499>
+
 <br>
 
 ## 2020-02-26
