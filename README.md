@@ -10,6 +10,22 @@
 
 <br>
 
+## 2020-02-28
+
+### D
+
+- Solution_D_1952_수영장
+
+  > <https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PpFQaAQMDFAUq&categoryId=AV5PpFQaAQMDFAUq&categoryType=CODE>
+
+### D
+
+- Solution_D_2115_벌꿀채취 
+
+  > <https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5V4A46AdIDFAWu>
+
+<br>
+
 ## 2020-02-27
 
 ### S1
