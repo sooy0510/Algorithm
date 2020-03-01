@@ -7,6 +7,18 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
+/**
+ * 
+ * 14502_연구소
+ * 메모리 : 281112KB
+ * 시간 : 756ms
+ * 길이 : 2654B
+ * 풀이
+ * 1. 조합, BFS
+ * 2. 바이러스 퍼진부분을 -1로 처리해서, 다른 조합을 위해 원래대로 초기화할때 -1만 0으로 수정했음
+ *
+ */
+
 public class Main_B_G5_14502_연구소 {
 
 	static int MAX = 0;
@@ -39,14 +51,14 @@ public class Main_B_G5_14502_연구소 {
 			}
 		}
 		
-		perm(0,0,0);
+		comb(0,0,0);
 		
 		System.out.println(MAX);
 		
 	}
 
 	
-	private static void perm(int i, int j, int cnt) {
+	private static void comb(int i, int j, int cnt) {
 		if(cnt == 3) {
 			virus();
 			MAX = Math.max(result, MAX);
@@ -64,7 +76,7 @@ public class Main_B_G5_14502_연구소 {
 					continue;
 				
 					map[r][c] = 1;
-					perm(i,j+1,cnt+1);
+					comb(i,j+1,cnt+1);
 					map[r][c] = 0;
 				}
 			}
