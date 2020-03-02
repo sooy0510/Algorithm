@@ -10,6 +10,16 @@
 
 <br>
 
+## 2020-03-03
+
+### D4
+
+- Solution_D4_7699_수지의수지맞는여행 
+
+  > [https://swexpertacademy.com/main/talk/solvingClub/problemView.do?contestProbId=AWqUzj0arpkDFARG&solveclubId=AXCJQaIKch0DFAVg&problemBoxTitle=3%EC%9B%9403%EC%9D%BC&problemBoxCnt=1&probBoxId=AXCarZiaf3sDFAQK](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?contestProbId=AWqUzj0arpkDFARG&solveclubId=AXCJQaIKch0DFAVg&problemBoxTitle=3월03일&problemBoxCnt=1&probBoxId=AXCarZiaf3sDFAQK)
+
+<br>
+
 ## 2020-03-02
 
 ### S4
