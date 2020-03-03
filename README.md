@@ -18,6 +18,12 @@
 
   > [https://swexpertacademy.com/main/talk/solvingClub/problemView.do?contestProbId=AWqUzj0arpkDFARG&solveclubId=AXCJQaIKch0DFAVg&problemBoxTitle=3%EC%9B%9403%EC%9D%BC&problemBoxCnt=1&probBoxId=AXCarZiaf3sDFAQK](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?contestProbId=AWqUzj0arpkDFARG&solveclubId=AXCJQaIKch0DFAVg&problemBoxTitle=3월03일&problemBoxCnt=1&probBoxId=AXCarZiaf3sDFAQK)
 
+### S1
+
+- Main_B_S1_1012_유기농배추 
+
+  > <https://www.acmicpc.net/problem/1012>
+
 <br>
 
 ## 2020-03-02
