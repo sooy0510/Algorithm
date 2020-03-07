@@ -10,6 +10,16 @@
 
 <br>
 
+## 2020-03-08
+
+### D5
+
+- Solution_D5_7793_오나의여신님 
+
+  > <https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWsBQpPqMNMDFARG>
+
+<br>
+
 ## 2020-03-07
 
 ### S2
