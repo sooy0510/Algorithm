@@ -18,6 +18,12 @@
 
   > <https://www.acmicpc.net/problem/6603>
 
+### S1
+
+- Main_B_S1_2583_영역구하기
+
+  > <https://www.acmicpc.net/problem/2583>
+
 <br>
 
 ## 2020-03-06
