@@ -16,12 +16,12 @@ import java.util.StringTokenizer;
  * (BFS)
  * 메모리 : 13864KB
  * 시간 : 88ms
- * 길이 : 2328KB
+ * 길이 : 2328B
  * 
  * (DFS)
  * 메모리 : 13608KB
  * 시간 : 84ms
- * 길이 : 2039KB
+ * 길이 : 2039B
  *
  */
 
