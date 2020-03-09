@@ -10,6 +10,16 @@
 
 <br>
 
+## 2020-03-09
+
+### D
+
+- Solution_D_5656_벽돌깨기
+
+  > <https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRQm6qfL0DFAUo>
+
+<br>
+
 ## 2020-03-08
 
 ### D5
