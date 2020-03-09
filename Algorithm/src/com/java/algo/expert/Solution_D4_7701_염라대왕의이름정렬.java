@@ -8,6 +8,19 @@ import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * 
+ * 7701_염라대왕의이름정렬
+ * 메모리 : 177196KB
+ * 시간 : 827ms
+ * 길이 : 1293B
+ * 풀이
+ * 1. Hashset -> Arraylist
+ * 2. Comparator
+ * - 길이순, 사전순
+ *
+ */
+
 public class Solution_D4_7701_염라대왕의이름정렬 {
 
 	private static int N;
