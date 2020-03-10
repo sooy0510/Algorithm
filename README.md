@@ -21,18 +21,18 @@
 ### S3
 
 - Main_B_S3_15649_N과M_1
-
-### S3
-
 - Main_B_S3_15650_N과M_2
-
-### S3
-
 - Main_B_S3_15649_N과M_3
-
-### S3
-
 - Main_B_S3_15650_N과M_4
+- Main_B_S3_15650_N과M_5
+- Main_B_S3_15650_N과M_6
+- Main_B_S3_15650_N과M_7
+- Main_B_S3_15650_N과M_8
+- Main_B_S3_15650_N과M_9
+
+### D
+
+- Solution_D_5656_벽돌깨기 _2(2차)
 
 <br>
 
