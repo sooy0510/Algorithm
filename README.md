@@ -12,6 +12,20 @@
 
 ## 2020-03-10
 
+### S2
+
+- Main_B_S2_15663_N과M_9_recursive
+
+### D4
+
+- Solution_D4_1251_하나로
+
+  > <https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV15StKqAQkCFAYD&>
+
+<br>
+
+## 2020-03-10
+
 ### D4
 
 - Solution_D4_7701_염라대왕의이름정렬
@@ -28,7 +42,11 @@
 - Main_B_S3_15650_N과M_6
 - Main_B_S3_15650_N과M_7
 - Main_B_S3_15650_N과M_8
+
+### S2
+
 - Main_B_S3_15650_N과M_9
+- Main_B_S3_15650_N과M_10
 
 ### D
 
