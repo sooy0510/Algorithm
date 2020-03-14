@@ -21,6 +21,12 @@
 
 - Solution_D4_3378_스타일리쉬들여쓰기(2차)
 
+### D4
+
+- Solution_D4_1868_파핑파핑지뢰찾기 
+
+  > <https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5LwsHaD1MDFAXc>
+
 <br>
 
 ## 2020-03-13
