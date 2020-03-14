@@ -18,7 +18,7 @@ import java.util.StringTokenizer;
  */
 
 
-public class Main_B_15665_N과M_11 {
+public class Main_B_S2_15665_N과M_11 {
 
 	private static int N;
 	private static int M;
@@ -63,6 +63,7 @@ public class Main_B_15665_N과M_11 {
 				permutation(index+1);
 			}
 		}
+		numbers[index] = 0;
 	}
 
 }
