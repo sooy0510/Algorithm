@@ -7,10 +7,11 @@ import java.util.StringTokenizer;
 /**
  * 
  * 4012_요리사
- * 메모리 : 38180KB
- * 시간 : 228ms
+ * 메모리 : 37580KB -> 33456KB
+ * 시간 : 211ms -> 161ms
  * 풀이
  * 1. 팀나누기, 시너지구할 2개재료 고르기 => 조합
+ * 2. 같은 재료끼리는 어차피 시너지 0이니까 이중포문으로 시너지 구하기 -> 시간감소
  *
  */
 
@@ -22,8 +23,6 @@ public class Solution_D_4012_요리사 {
 	private static int[] dish2;
 	private static boolean[] selected;
 	static int MIN;
-	static int syn1;
-	static int syn2;
 	static StringBuilder sb = new StringBuilder();
 
 	public static void main(String[] args) throws Exception{
@@ -56,7 +55,6 @@ public class Solution_D_4012_요리사 {
 	}
 
 	private static void combination(int index, int count) {
-		
 		if(count == N/2) {
 			
 			int idx = 0;
@@ -66,10 +64,29 @@ public class Solution_D_4012_요리사 {
 				}
 			}
 			
-			syn1 = 0; syn2 = 0;
+			int syn1 = 0; int syn2 = 0; int n1; int n2;
 			
-			getFlavor1(new int[2], 0, 0);
-			getFlavor2(new int[2], 0, 0);
+			//getFlavor1(new int[2], 0, 0);
+			//getFlavor2(new int[2], 0, 0);
+			
+			
+			//어차피 같은 재료 끼리는 시너지 0
+			for(int i=0; i<N/2; i++) {
+				for(int j=0; j<N/2; j++) {
+					n1 = dish1[i];
+					n2 = dish1[j];
+					syn1 += synergy[n1][n2];
+				}
+			}
+			
+			for(int i=0; i<N/2; i++) {
+				for(int j=0; j<N/2; j++) {
+					n1 = dish2[i];
+					n2 = dish2[j];
+					syn2 += synergy[n1][n2];
+				}
+			}
+			
 			int diff = Math.abs(syn1 - syn2);
 			
 			
@@ -82,6 +99,9 @@ public class Solution_D_4012_요리사 {
 		}
 		
 		for(int i=index; i<N; i++) {
+			if(selected[i])
+				continue;
+			
 			dish1[count] = i;
 			selected[i] = true;
 			combination(i+1, count+1);
@@ -89,34 +109,34 @@ public class Solution_D_4012_요리사 {
 		}
 	}
 
-	private static void getFlavor2(int[] temp, int index, int count) {
-		if(count == 2) {
-			syn2 += synergy[temp[0]][temp[1]];
-			syn2 += synergy[temp[1]][temp[0]];
-			return;
-		}
-		
-		for(int i=index; i<N/2; i++) {
-			temp[count] = dish2[i];
-			getFlavor2(temp, i+1, count+1);
-		}
-		
-	}
-
-	//같은 팀에서 시너지 구할 두개의 원소 구하기
-	private static void getFlavor1(int[] temp, int index, int count) {
-		
-		if(count == 2) {
-			syn1 += synergy[temp[0]][temp[1]];
-			syn1 += synergy[temp[1]][temp[0]];
-			return;
-		}
-		
-		for(int i=index; i<N/2; i++) {
-			temp[count] = dish1[i];
-			getFlavor1(temp, i+1, count+1);
-		}
-		
-	}
+//	private static void getFlavor2(int[] temp, int index, int count) {
+//		if(count == 2) {
+//			syn2 += synergy[temp[0]][temp[1]];
+//			syn2 += synergy[temp[1]][temp[0]];
+//			return;
+//		}
+//		
+//		for(int i=index; i<N/2; i++) {
+//			temp[count] = dish2[i];
+//			getFlavor2(temp, i+1, count+1);
+//		}
+//		
+//	}
+//
+//	//같은 팀에서 시너지 구할 두개의 원소 구하기
+//	private static void getFlavor1(int[] temp, int index, int count) {
+//		
+//		if(count == 2) {
+//			syn1 += synergy[temp[0]][temp[1]];
+//			syn1 += synergy[temp[1]][temp[0]];
+//			return;
+//		}
+//		
+//		for(int i=index; i<N/2; i++) {
+//			temp[count] = dish1[i];
+//			getFlavor1(temp, i+1, count+1);
+//		}
+//		
+//	}
 
 }
