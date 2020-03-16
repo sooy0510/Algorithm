@@ -10,6 +10,16 @@
 
 <br>
 
+## 2020-03-16
+
+### D
+
+- Solution_D_4012_요리사
+
+  > <https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWIeUtVakTMDFAVH>
+
+<br>
+
 ## 2020-03-14
 
 ### S2
