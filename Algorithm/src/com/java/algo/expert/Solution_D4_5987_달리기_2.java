@@ -51,7 +51,7 @@ public class Solution_D4_5987_달리기_2 {
 			//순열
 			if((flag&1<<i)==0) {	//아직 선택된것이 없다면(순열)
 				//
-				if((flag & needs[i]) == needs[i]) {
+				if((flag & needs[i]) == needs[i]) { //지금 선수 배치할 위치(flag)에 해당선수(needs[i])가 오는게 맞는지
 									//순열
 					memo[flag] +=solve(flag | 1<<i);
 				}
