@@ -10,13 +10,25 @@
 
 <br>
 
+## 2020-03-26
+
+### G3
+
+- Main_B_G3_17143_낚시왕
+
+  > <https://www.acmicpc.net/problem/17143>
+
+<br>
+
 ## 2020-03-24
 
 ### G5
 
 - Main_B_G5_17406_배열돌리기4
 
-  > <https://www.acmicpc.net/problem/17406>
+  > <https://www.acmicpc.net/problem/17406
+  
+- Main_B_G5_17406_배열돌리기4 _ np(next permutation)
 
 <br>
 
