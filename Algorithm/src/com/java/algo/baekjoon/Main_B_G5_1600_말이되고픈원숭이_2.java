@@ -6,69 +6,86 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
+/**
+ * 
+ * 1600_말이되고픈원숭이(2차)
+ * 메모리 : 86740KB
+ * 시간 : 476ms
+ * 길이 : 2094B
+ * 풀이
+ * 1. BFS
+ * 2. visited를 2차원으로 관리했더니 계속 메모리 초과
+ * 3. 3차원배열로 방문체크하는건 생각못해봐서 새로운 문제
+ *
+ */
+
 public class Main_B_G5_1600_말이되고픈원숭이_2 {
 
-	
-	static int map[][];
-	static int row,col,endX,endY,count;
-	
-	public static void main(String[] args) throws Exception {
+	private static int K,N,M;
+	private static int[][] map;
+	private static int end_i,end_j;
 
-		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-		count = Integer.parseInt(in.readLine());
-		StringTokenizer st= new StringTokenizer(in.readLine(), " ");
-		col = Integer.parseInt(st.nextToken());
-		row = Integer.parseInt(st.nextToken());
-		endX = row-1;
-		endY = col-1;
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		K = Integer.parseInt(br.readLine());	//0<=K<=30
 		
-		map = new int[row][col];
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		M = Integer.parseInt(st.nextToken());	//0<=M<=200
+		N = Integer.parseInt(st.nextToken());	//0<=N<=200
 		
-		for (int i = 0; i < row; i++) {
-			st = new StringTokenizer(in.readLine()," ");
-			for (int j = 0; j < col; j++) {
-				map[i][j] = Integer.parseInt(st.nextToken());
+		map = new int[N][M];
+		end_i = N-1;
+		end_j = M-1;
+		
+		for(int i=0; i<N; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			for(int j=0; j<M; j++) {
+				map[i][j] = st.nextToken().charAt(0)-'0';
 			}
 		}
 		System.out.println(move());
-		
 	}
 
-	static int[][][] direction = {
-			{ {-1,0},{1,0},{0,-1},{0,1} }, // 원숭이의 움직임 (상하좌우)
-			{ {-1,-2},{1,-2},{-2,-1},{2,-1},{-2,1},{2,1},{-1,2},{1,2}}, // 말의 움직임(8방)
+	static int[][][] dir = {	//[2][?][2]
+			{{0,1},{1,0},{0,-1},{-1,0}},	//우하좌상
+			{{1,2},{2,1},{2,-1},{1,-2},{-1,-2},{-2,-1},{-2,1},{-1,2}}	//말 이동
 	};
+	
 	private static int move() {
-		int moveCnt=0, temp[]=null, x=0,y=0,nx=0,ny=0,cnt=0;
-		boolean[][][] visited = new boolean[count+1][row][col]; // 31*200*200 : 1,200,000
-		Queue<int[]> queue = new LinkedList<int[]>();
-		visited[count][0][0] = true;
-		queue.offer(new int[] {count,0,0,0}) ; //남은말의움직임횟수,x,y,이동동작횟수 
-		while (!queue.isEmpty()) {
-			
-			temp  = queue.poll();
+		int[] temp = null;
+		int i,j,ni,nj,cnt,moveCnt; //현재 i,j, 다음 i,j, 남은 말 이동 수, 총 이동수
+		boolean visited[][][] = new boolean[K+1][N][M];	//31*200*200
+		Queue<int[]> queue = new LinkedList<int[]>();	//말이동수, i, j, 이동동작횟수
+		visited[K][0][0] = true;	
+		queue.offer(new int[] {K,0,0,0});
+		
+		while(!queue.isEmpty()) {
+			temp = queue.poll();
 			cnt = temp[0];
-			x = temp[1];
-			y = temp[2];
+			i = temp[1];
+			j = temp[2];
 			moveCnt = temp[3];
 			
-			if(x==endX && y==endY) return moveCnt;
+			if(i == end_i && j == end_j) {
+				return moveCnt;
+			}
 			
-			for (int h = 0; h < 2; h++) { // h:0 ==>  원숭이 ,  1: 말 
-				
-				if(h==1) { // 말 
-					if(cnt==0) break; //  말의 움직임을 다한 경우 
-					else cnt--; // 말의 움직임이 남은 경우 횟수 차감 
+			for(int h=0; h<2; h++) {
+				if(h == 1) {	//말
+					if(cnt == 0)break; 	//말 움직임이 안남아잇는경우
+					else cnt--;
 				}
 				
-				for (int d = 0; d < direction[h].length; d++) {
+				for(int d=0; d<dir[h].length; d++) {
+					ni = i + dir[h][d][0];
+					nj = j + dir[h][d][1];
 					
-					nx = x + direction[h][d][0];
-					ny = y + direction[h][d][1];
+					if(ni < 0 || nj < 0 || ni >= N || nj >= M)
+						continue;
 					
-					if(nx>=0 && nx<row && ny>=0 && ny<col && map[nx][ny] ==0 && !visited[cnt][nx][ny]) {
-						visited[cnt][nx][ny] = true;
-						queue.offer(new int[] {cnt,nx,ny,moveCnt+1});
+					if(map[ni][nj] ==0 && !visited[cnt][ni][nj]) {
+						visited[cnt][ni][nj] = true;
+						queue.offer(new int[] {cnt, ni, nj, moveCnt+1});
 					}
 					
 				}
@@ -76,5 +93,4 @@ public class Main_B_G5_1600_말이되고픈원숭이_2 {
 		}
 		return -1;
 	}
-
 }
