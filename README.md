@@ -10,6 +10,28 @@
 
 <br>
 
+## 2020-04-10
+
+### G5
+
+- Main_B_G5_1753_최단경로
+
+  > <https://www.acmicpc.net/problem/1753>
+
+<br>
+
+## 2020-04-09
+
+### D4
+
+- [Solution_D4_1251_하나로_Kruskal](https://github.com/sooy0510/Algorithm/blob/master/Algorithm/src/com/java/algo/expert/Solution_D4_1251_하나로_Kruskal.java)
+
+### G4
+
+- [Main_B_G4_1197_최소스패닝트리](https://github.com/sooy0510/Algorithm/blob/master/Algorithm/src/com/java/algo/baekjoon/Main_B_G4_1197_최소스패닝트리.java)
+
+<br>
+
 ## 2020-04-07
 
 ### S1
