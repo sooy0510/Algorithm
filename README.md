@@ -10,6 +10,26 @@
 
 <br>
 
+## 2020-04-12
+
+### G2
+
+- Main_B_G2_1786_찾기
+
+  > <https://www.acmicpc.net/problem/1786>
+
+<br>
+
+## 2020-04-11
+
+### G3
+
+- Main_B_G3_16916_부분문자열
+
+  > <https://www.acmicpc.net/problem/16916>
+
+<br>
+
 ## 2020-04-10
 
 ### G5
