@@ -4,6 +4,17 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/*
+ * 14889_스타트와링크
+ * 메모리 : 16916KB
+ * 시간 : 228ms
+ * 길이 : 1651B
+ * 풀이
+ * 1. 조합
+ * 2. 예전에 풀었을때 팀나누고 점수계산할때도 조합써서 어렵게 푸느라 포기했던 기억이 나는데
+ * 왜 어렵게 생각했을까 싶다. 
+ */
+
 public class Main_B_S3_14889_스타트와링크 {
 	
 	private static int N;
