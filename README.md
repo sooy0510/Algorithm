@@ -10,6 +10,16 @@
 
 <br>
 
+## 2020-04-19
+
+### G3
+
+- Main_B_G3_14890_경사로
+
+  > <https://www.acmicpc.net/problem/14890>
+
+<br>
+
 ## 2020-04-18
 
 ### S3
@@ -18,11 +28,7 @@
 
   > <https://www.acmicpc.net/problem/1463>
 
-### S3
-
 - Main_B_S3_9095_123더하기
-
-### S3
 
 - Main_B_S3_1003_피보나치함수
 
