@@ -18,6 +18,12 @@
 
   > <https://www.acmicpc.net/problem/14890>
 
+### G5
+
+- Main_B_G5_1916_최소비용구하기 : 다익스트라
+
+  > <https://www.acmicpc.net/problem/1916>
+
 <br>
 
 ## 2020-04-18
