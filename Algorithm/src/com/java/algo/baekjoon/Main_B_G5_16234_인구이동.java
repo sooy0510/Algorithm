@@ -4,6 +4,16 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/*
+ * 16234_인구이동
+ * 메모리 : 28168KB
+ * 시간 : 352ms
+ * 길이 : 2450B
+ * 풀이
+ * 1. DFS 
+ * 2. HT코드 참조
+ */
+
 public class Main_B_G5_16234_인구이동 {
 
 	private static int N,L,R;
