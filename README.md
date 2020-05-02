@@ -22,6 +22,12 @@
 
   > <https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWbrg9uabZsDFAWQ>
 
+### D
+
+- Solution_1949_등산로조성
+
+  > <https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PoOKKAPIDFAUq>
+
 <br>
 
 ## 2020-05-01
