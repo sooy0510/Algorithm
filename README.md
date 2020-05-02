@@ -16,6 +16,12 @@
 
 - Solution_D4_4050_재관이의대량할인
 
+### D4
+
+- Solution_D4_6109_추억의2048게임
+
+  > <https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWbrg9uabZsDFAWQ>
+
 <br>
 
 ## 2020-05-01
