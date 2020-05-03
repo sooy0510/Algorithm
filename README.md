@@ -20,7 +20,11 @@
 
 - Solution_D_5653_줄기세포배양**(resolve!)** 
 
-  > <https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRJ8EKe48DFAUo>
+  > <https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRJ8EKe48DFAUo
+
+### G5
+
+- Main_B_G5_15686_치킨배달
 
 <br>
 
