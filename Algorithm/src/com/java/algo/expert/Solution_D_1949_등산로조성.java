@@ -16,7 +16,7 @@ import java.util.StringTokenizer;
  * return을 하면 자신을 호출한 함수로 돌아가게 되고, 같이 진행되던 다른 dfs가 종료되서 그런건가..?
  */
 
-public class Solution_1949_등산로조성 {
+public class Solution_D_1949_등산로조성 {
 
 	private static int N,K;
 	private static int[][] map;
