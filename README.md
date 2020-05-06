@@ -10,6 +10,16 @@
 
 <br>
 
+## 2020-05-07
+
+### G4
+
+- Main_B_G4_1504_특정한최단경로
+
+  > <https://www.acmicpc.net/problem/1504>
+
+<br>
+
 ## 2020-05-06
 
 ### S3
@@ -24,7 +34,7 @@
 
   > <https://www.acmicpc.net/problem/2146>
 
-
+<br>
 
 ## 2020-05-03
 
