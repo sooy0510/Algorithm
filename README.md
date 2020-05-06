@@ -18,6 +18,12 @@
 
   ><https://www.acmicpc.net/problem/6987>
 
+### G3
+
+- Main_B_G3_2146_다리만들기
+
+  > <https://www.acmicpc.net/problem/2146>
+
 
 
 ## 2020-05-03
