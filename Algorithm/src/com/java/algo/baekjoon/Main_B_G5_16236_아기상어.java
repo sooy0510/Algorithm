@@ -1,13 +1,20 @@
 package com.java.algo.baekjoon;
 
-import java.beans.Visibility;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.StringTokenizer;
+
+/*
+ * 16236_아기상어
+ * 메모리 : 24896KB
+ * 시간 : 168ms
+ * 길이 : 2904B
+ * 풀이
+ * 1. 시뮬, BFS
+ */
 
 public class Main_B_G5_16236_아기상어 {
 
@@ -16,12 +23,11 @@ public class Main_B_G5_16236_아기상어 {
 	private static Queue<Fish> q;
 
 	static int[][] dir = {{-1,0},{0,-1},{1,0},{0,1}}; //상좌하우
-	private static int MIN;
 	private static int result;
 	private static int weight;
 	private static int[][] distance;
 	private static int cnt;
-	private static LinkedList<Fish> fish;
+	private static PriorityQueue<Fish> fish;
 	
 	static class Fish implements Comparable<Fish>{
 		int i,j,dist;
@@ -78,10 +84,8 @@ public class Main_B_G5_16236_아기상어 {
 		Fish shark;
 		int ni, nj;
 		
-		//Queue<Fish> fish;
-		
 		while(true) {
-			fish = new LinkedList<Fish>();
+			fish = new PriorityQueue<Fish>();
 			distance = new int[N][N]; 	//상어에서 물고기까지의 거리를 저장할거임
 			
 			while(!q.isEmpty()) {
@@ -124,7 +128,7 @@ public class Main_B_G5_16236_아기상어 {
 				cnt = 0;
 			}
 			
-			q.add(new Fish(start.i, start.j, weight));
+			q.add(new Fish(start.i, start.j, 0));
 		}
 	}
 
