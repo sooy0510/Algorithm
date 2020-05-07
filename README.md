@@ -18,6 +18,12 @@
 
   > <https://www.acmicpc.net/problem/1504>
 
+### G5
+
+- Main_B_G5_16236_아기상어
+
+  > <https://www.acmicpc.net/problem/16236>
+
 <br>
 
 ## 2020-05-06
