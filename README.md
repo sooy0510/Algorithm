@@ -20,6 +20,14 @@
 
 - Main_B_G3_2146_다리만들기 _2(2차)
 
+### G3
+
+- Main_B_G3_17472_다리만들기2**(resolve!)**
+
+  > <https://www.acmicpc.net/problem/17472>
+
+  
+
 <br>
 
 ## 2020-05-07
