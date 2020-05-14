@@ -29,7 +29,7 @@ public class Main_B_G2_2252_줄세우기 {
 		}
 //		진입차수가 0인것들 큐에 삽입
 		Queue<Integer> q = new LinkedList<>();
-		for(int i=1; i<N; i++) {
+		for(int i=1; i<=N; i++) {
 			if(indegree[i] == 0) {
 				q.offer(i);
 			}
