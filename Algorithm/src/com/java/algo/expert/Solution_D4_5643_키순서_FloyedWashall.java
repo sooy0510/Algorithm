@@ -10,19 +10,19 @@ import java.util.StringTokenizer;
  * '모든 정점'에서 '모든 정점'으로의 최단 경로
  * 거쳐가는 정점을 기준으로 최단 거리를 구한다
  * 
- * 5643_키순서
- * 메모리 : 90164KB
- * 시간 : 2281ms
- * 길이 : 1690B
+ * 5643_키순서(Floyed Washall)
+ * 메모리 : 93180KB
+ * 시간 : 2815ms
+ * 길이 : 1566B
  * 풀이
- * 1. DFS -> 자기보다 큰사람 / 자기보다 작은사람
+ * 1. Floyed Washall
  */
 
 public class Solution_D4_5643_키순서_FloyedWashall {
 	
 	private static int N,M;
 	private static int[][] map;
-	private static int INF = 987654321;
+	private static int INF = 999_999;
 	private static int result;
 
 	public static void main(String[] args) throws Exception{
@@ -50,8 +50,8 @@ public class Solution_D4_5643_키순서_FloyedWashall {
 			
 			//플로이드 와샬
 			for(int k=1; k<=N; k++) {
-				for (int i = 1; i < N; i++) {
-					for (int j = 1; j < N; j++) {
+				for (int i = 1; i <=N; i++) {
+					for (int j = 1; j <=N; j++) {
 						if(map[i][j] > map[i][k] + map[k][j]) {	//k는 거쳐가는 정점
 							map[i][j] = map[i][k] + map[k][j];
 						}
