@@ -10,6 +10,22 @@
 
 <br>
 
+## 2020-05-20
+
+### G1
+
+- Main_B_G1_1194_달이차오른다가자**(resolve!)**
+
+  > <https://www.acmicpc.net/problem/1194>
+
+### G4
+
+- Main_B_G4_1062_가르침 _bitmasking
+
+  > <https://www.acmicpc.net/problem/1062>
+
+<br>
+
 ## 2020-05-22
 
 ### G4
