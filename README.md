@@ -10,6 +10,16 @@
 
 <br>
 
+## 2020-05-26
+
+### G5
+
+- Main_B_G5_15683_감시**(resolve!)**
+
+  > <https://www.acmicpc.net/problem/15683>
+
+<br>
+
 ## 2020-05-25
 
 ### D4
