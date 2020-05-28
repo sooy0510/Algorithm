@@ -18,6 +18,16 @@
 
   > <https://www.acmicpc.net/problem/1194>
 
+### G4
+
+- Main_B_G4_17142_연구소3
+
+  > <https://www.acmicpc.net/problem/17142>
+
+### D
+
+- Solution_D_1953_탈주범검거
+
 <br>
 
 ## 2020-05-26
