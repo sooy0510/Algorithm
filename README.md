@@ -10,6 +10,16 @@
 
 <br>
 
+## 2020-06-04
+
+### D
+
+- Solution_D_4013_특이한자석
+
+  > <https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWIeV9sKkcoDFAVH>
+
+<br>
+
 ## 2020-05-28
 
 ### G1
